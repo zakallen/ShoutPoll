@@ -1,0 +1,67 @@
+<head>
+  <title>ShoutPoll</title>
+</head>
+
+<body>
+  <center>
+    <h1>ShoutPoll</h1>
+  </center>
+  {{> router}}
+</body>
+
+<template name="router">
+  {{#if ishome}}
+    {{> home}}
+  {{else}}
+    {{> view}}
+  {{/if}}
+</template>
+
+<template name="view">
+  <center>
+    <div class="container">
+      {{#if post}}
+        <h2>{{post.title}}</h2>
+        {{#each choices}}
+          {{> choice}}
+        {{/each}}
+      {{else}}
+        <h2>No Shoutpoll exists here</h2>
+      {{/if}}
+    </div>
+    <div class="container">
+      <h2>Standings</h2>
+      {{#each standings}}
+        {{> result}}
+      {{/each}}
+    </div>
+  </center>
+</template>
+
+<template name="result">
+  <h4>{{value}} - ({{score}})</h4>
+</template>
+
+<template name="choice">
+  <div class="option">
+    <span class="name">{{value}} - </span>
+    <span class="name">({{score}})</span>
+  </div>
+</template>
+
+<template name="home">
+  <center>
+    <div class="container">
+      <input type="text" class="title" placeholder="Question">
+      <hr>
+      <div class="choices">
+        <input type="text" class="choice0" placeholder="Option 1">
+        <input type="text" class="choice1" placeholder="Option 2">
+      </div>
+      <button class="addOne">Add</button>
+      <button class="save">Create Poll</button>
+      <div class="shoutkey">
+      </div>
+    </div>
+  </center>
+</template>

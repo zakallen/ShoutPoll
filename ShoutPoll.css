@@ -1,0 +1,89 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin: 20px 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #EEE;
+  border-radius: 20px;
+  margin: 0 auto 20px auto;
+}
+hr {
+  border: 1px solid #AAA;
+  margin: 2px auto 10px auto;
+  width: 100px;
+}
+.addOne, .save, input{
+  width: 297px;
+  font-size: 1.6em;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+input {
+  text-indent: 10px;
+  border-color: transparent;
+  padding: 5px 0 5px 0;
+}
+input:focus {
+  border-color: #1abc9c;
+}
+.addOne, .save {
+  width: 300px;
+  height: 1.8em;
+  cursor: pointer;
+  border:none;
+  color: #FFF;
+}
+.addOne {
+  background-color: #66ADFF;
+}
+.save {
+  background-color: #21FF9A;
+  margin-bottom: 0;
+}
+.addOne:hover {
+  background-color: #4D7EFF;
+}
+.save:hover {
+  background-color: #1abc9c;
+}
+textarea, input { outline: none; }
+/* View Page */
+
+h2{
+  margin-top: 10px;
+}
+.option {
+  width: 300px;
+  font-size: 2em;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border:none;
+  color: #FFF;
+  background-color: #1abc9c;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+.option:hover {
+  background-color: #21FF9A;
+}
+a {
+  text-decoration: none;
+  color: #1abc9c;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+a:hover {
+  color: #21FF9A;
+}
